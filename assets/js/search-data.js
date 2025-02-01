@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "post-a-post-with-image-galleries",
+  },{id: "nav-others",
+          title: "Others",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Other/";
+          },
+        },{id: "post-a-post-with-image-galleries",
       
         title: "a post with image galleries",
       
@@ -361,16 +368,8 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+    },{id: "news-our-papers-arb-llm-and-gendataagent-is-accepted-by-neurips-2024",
+          title: 'Our papers ARB-LLM and GenDataAgent is accepted by NeurIPS 2024.',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
