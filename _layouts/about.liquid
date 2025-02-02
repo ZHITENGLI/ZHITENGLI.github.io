@@ -8,7 +8,7 @@ layout: default
       <div class="profile float-left">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          <img src="{{ profile_image_path }}" alt="Profile image" class="img-fluid profile-img" style="height: 240px; object-fit: cover;">
+          <img src="{{ profile_image_path }}" alt="Profile image" class="img-fluid profile-img" style="height: 280px; object-fit: cover;">
         {% endif %}
       </div>
       <!-- Name and Title -->
@@ -16,13 +16,7 @@ layout: default
         <h1 class="post-title">
           {{ site.first_name }} {{ site.last_name }}
         </h1>
-        <p class="desc">
-          <br> {{ site.current_status }}
-          <br> {{ site.affiliation }}
-          <br> {{ site.office }}
-          <br> {{ site.email_contact }}
-        </p>
-        <div class="social-small">
+        <div class="social">
           <div class="contact-icons">
             <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope"></i></a>
             <span class="divider" style="margin: 0 5px;"></span>
@@ -39,6 +33,7 @@ layout: default
 
   <article>
 
+    <div style="margin-bottom: 50px;"></div>
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
